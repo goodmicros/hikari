@@ -1,0 +1,23 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 1316d5a3-c91f-4550-a7e1-54dce7a0df31)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "V_USB" (shape output) (at 143.51 97.79 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 3b00d12d-72d7-4627-8f63-4bc6c717b869)
+  )
+  (hierarchical_label "RX" (shape output) (at 143.51 101.6 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 696488cd-3421-48c0-9ea3-d629729f9ab7)
+  )
+  (hierarchical_label "TX" (shape input) (at 143.51 105.41 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 829900f9-6777-408b-811c-3821f1a8e0a6)
+  )
+)
