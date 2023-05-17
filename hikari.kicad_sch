@@ -175,8 +175,8 @@
     (property "Datasheet" "" (at 120.65 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "~" (uuid baac3f6a-badc-4a2c-ba59-c02b6a2c0cb2))
-    (pin "~" (uuid baac3f6a-badc-4a2c-ba59-c02b6a2c0cb2))
+    (pin "~" (uuid baac3f6a-badc-4a2c-ba59-c02b6a2c0cb3))
+    (pin "~" (uuid baac3f6a-badc-4a2c-ba59-c02b6a2c0cb3))
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961"
@@ -226,8 +226,8 @@
     (property "Datasheet" "" (at 120.65 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "~" (uuid 7a8e748f-3dfc-4cad-afb7-8edea41ccaf4))
-    (pin "~" (uuid 7a8e748f-3dfc-4cad-afb7-8edea41ccaf4))
+    (pin "~" (uuid 7a8e748f-3dfc-4cad-afb7-8edea41ccaf5))
+    (pin "~" (uuid 7a8e748f-3dfc-4cad-afb7-8edea41ccaf5))
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961"
