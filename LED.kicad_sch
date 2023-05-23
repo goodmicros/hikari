@@ -234,7 +234,7 @@
       )
     )
     (symbol "generic:5V" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "5V" (at 3.81 1.27 0)
+      (property "Reference" "#5V" (at 3.81 1.27 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Value" "5V" (at 0 3.81 0)
@@ -272,7 +272,7 @@
         (effects (font (size 1.27 1.27)))
       )
       (property "Value" "C" (at 2.54 -2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
+        (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "SMT:0603" (at 0 -2.54 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -310,7 +310,7 @@
       )
     )
     (symbol "generic:GND" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "GND" (at 3.81 1.27 0)
+      (property "Reference" "#GND" (at 3.81 1.27 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Value" "GND" (at 3.81 0 0)
@@ -406,7 +406,7 @@
         (effects (font (size 1.27 1.27)))
       )
       (property "Value" "R" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
+        (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "SMT:0603" (at -2.54 -0.635 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -608,7 +608,7 @@
     (property "Value" "10uF" (at 127 96.52 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (property "Footprint" "SMT:0805" (at 124.46 99.06 0)
+    (property "Footprint" "SMT:0603" (at 124.46 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 124.46 96.52 0)
@@ -637,7 +637,7 @@
   (symbol (lib_id "generic:GND") (at 172.72 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5fd17e4f-0ee2-40cd-9583-cf42029ede41)
-    (property "Reference" "#GND04" (at 176.53 107.95 0)
+    (property "Reference" "#GND?" (at 176.53 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 176.53 109.22 0)
@@ -653,16 +653,16 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/aa80c023-a405-4836-a45d-48fe501d72e6"
-          (reference "#GND04") (unit 1)
+          (reference "#GND?") (unit 1)
         )
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/4047ad27-abaf-44fc-8fae-330cc49c4e32"
-          (reference "#GND08") (unit 1)
+          (reference "#GND?") (unit 1)
         )
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/1271e14e-21a7-43a9-b754-008b9cfd2c5b"
-          (reference "#GND012") (unit 1)
+          (reference "#GND?") (unit 1)
         )
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/78613248-b522-4bfb-a044-b4a58ad1b605"
-          (reference "#GND016") (unit 1)
+          (reference "#GND?") (unit 1)
         )
       )
     )
@@ -671,7 +671,7 @@
   (symbol (lib_id "generic:GND") (at 134.62 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 60597a99-8250-4edc-9e6c-26c0cc7d912e)
-    (property "Reference" "#GND02" (at 138.43 107.95 0)
+    (property "Reference" "#GND?" (at 138.43 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 138.43 109.22 0)
@@ -687,16 +687,16 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/aa80c023-a405-4836-a45d-48fe501d72e6"
-          (reference "#GND02") (unit 1)
+          (reference "#GND?") (unit 1)
         )
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/4047ad27-abaf-44fc-8fae-330cc49c4e32"
-          (reference "#GND06") (unit 1)
+          (reference "#GND?") (unit 1)
         )
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/1271e14e-21a7-43a9-b754-008b9cfd2c5b"
-          (reference "#GND010") (unit 1)
+          (reference "#GND?") (unit 1)
         )
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/78613248-b522-4bfb-a044-b4a58ad1b605"
-          (reference "#GND014") (unit 1)
+          (reference "#GND?") (unit 1)
         )
       )
     )
@@ -787,7 +787,7 @@
   (symbol (lib_id "generic:GND") (at 162.56 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a5a32bf2-48ba-42d3-994c-9f65e51bc1f2)
-    (property "Reference" "#GND03" (at 166.37 107.95 0)
+    (property "Reference" "#GND?" (at 166.37 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 166.37 109.22 0)
@@ -803,16 +803,16 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/aa80c023-a405-4836-a45d-48fe501d72e6"
-          (reference "#GND03") (unit 1)
+          (reference "#GND?") (unit 1)
         )
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/4047ad27-abaf-44fc-8fae-330cc49c4e32"
-          (reference "#GND07") (unit 1)
+          (reference "#GND?") (unit 1)
         )
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/1271e14e-21a7-43a9-b754-008b9cfd2c5b"
-          (reference "#GND011") (unit 1)
+          (reference "#GND?") (unit 1)
         )
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/78613248-b522-4bfb-a044-b4a58ad1b605"
-          (reference "#GND015") (unit 1)
+          (reference "#GND?") (unit 1)
         )
       )
     )
@@ -855,7 +855,7 @@
   (symbol (lib_id "generic:GND") (at 124.46 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cfe9cd7a-f0cf-4e85-b42a-bebbb0faf7b4)
-    (property "Reference" "#GND01" (at 128.27 107.95 0)
+    (property "Reference" "#GND?" (at 128.27 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 128.27 109.22 0)
@@ -871,16 +871,16 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/aa80c023-a405-4836-a45d-48fe501d72e6"
-          (reference "#GND01") (unit 1)
+          (reference "#GND?") (unit 1)
         )
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/4047ad27-abaf-44fc-8fae-330cc49c4e32"
-          (reference "#GND05") (unit 1)
+          (reference "#GND?") (unit 1)
         )
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/1271e14e-21a7-43a9-b754-008b9cfd2c5b"
-          (reference "#GND09") (unit 1)
+          (reference "#GND?") (unit 1)
         )
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/78613248-b522-4bfb-a044-b4a58ad1b605"
-          (reference "#GND013") (unit 1)
+          (reference "#GND?") (unit 1)
         )
       )
     )
@@ -895,7 +895,7 @@
     (property "Value" "10uF" (at 175.26 96.52 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (property "Footprint" "SMT:0805" (at 172.72 99.06 0)
+    (property "Footprint" "SMT:0603" (at 172.72 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 172.72 96.52 0)

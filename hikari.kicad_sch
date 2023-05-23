@@ -6,7 +6,7 @@
 
   (lib_symbols
     (symbol "generic:GND" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "GND" (at 3.81 1.27 0)
+      (property "Reference" "#GND" (at 3.81 1.27 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Value" "GND" (at 3.81 0 0)
@@ -24,7 +24,7 @@
             (xy -1.27 -1.27)
             (xy 1.27 -1.27)
           )
-          (stroke (width 0) (type solid))
+          (stroke (width 0) (type default))
           (fill (type none))
         )
         (polyline
@@ -32,7 +32,7 @@
             (xy 0 -2.54)
             (xy 0 -2.54)
           )
-          (stroke (width 0) (type solid))
+          (stroke (width 0) (type default))
           (fill (type none))
         )
         (polyline
@@ -40,7 +40,7 @@
             (xy 0 -1.27)
             (xy 0 0)
           )
-          (stroke (width 0) (type solid))
+          (stroke (width 0) (type default))
           (fill (type none))
         )
         (polyline
@@ -48,7 +48,7 @@
             (xy 0.635 -1.905)
             (xy -0.635 -1.905)
           )
-          (stroke (width 0) (type solid))
+          (stroke (width 0) (type default))
           (fill (type none))
         )
       )
@@ -78,7 +78,7 @@
             (xy -1.27 0)
             (xy 1.27 1.27)
           )
-          (stroke (width 0) (type solid))
+          (stroke (width 0) (type default))
           (fill (type none))
         )
       )
@@ -175,8 +175,8 @@
     (property "Datasheet" "" (at 120.65 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "~" (uuid baac3f6a-badc-4a2c-ba59-c02b6a2c0cb4))
-    (pin "~" (uuid baac3f6a-badc-4a2c-ba59-c02b6a2c0cb4))
+    (pin "~" (uuid baac3f6a-badc-4a2c-ba59-c02b6a2c0cb6))
+    (pin "~" (uuid baac3f6a-badc-4a2c-ba59-c02b6a2c0cb6))
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961"
@@ -189,7 +189,7 @@
   (symbol (lib_id "generic:GND") (at 114.3 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 978f3988-91c4-424a-998c-f493b3f53de1)
-    (property "Reference" "GND01" (at 118.11 119.38 0)
+    (property "Reference" "#GND?" (at 118.11 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 118.11 120.65 0)
@@ -205,7 +205,7 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961"
-          (reference "GND01") (unit 1)
+          (reference "#GND?") (unit 1)
         )
       )
     )
@@ -226,8 +226,8 @@
     (property "Datasheet" "" (at 120.65 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "~" (uuid 7a8e748f-3dfc-4cad-afb7-8edea41ccaf6))
-    (pin "~" (uuid 7a8e748f-3dfc-4cad-afb7-8edea41ccaf6))
+    (pin "~" (uuid 7a8e748f-3dfc-4cad-afb7-8edea41ccaf8))
+    (pin "~" (uuid 7a8e748f-3dfc-4cad-afb7-8edea41ccaf8))
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961"
