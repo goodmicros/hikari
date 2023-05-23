@@ -242,11 +242,11 @@
       (property "Value" "CH340G" (at 0 12.7 0)
         (effects (font (size 1.524 1.524)))
       )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.524 1.524)))
+      (property "Footprint" "SOP:SOP-16" (at 0 0 0)
+        (effects (font (size 1.524 1.524)) hide)
       )
       (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.524 1.524)))
+        (effects (font (size 1.524 1.524)) hide)
       )
       (symbol "CH340G_0_1"
         (rectangle (start -7.62 13.97) (end 7.62 -12.7)
@@ -504,7 +504,7 @@
   (symbol (lib_id "generic:GND") (at 138.43 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 000a2c94-f371-4301-abae-31915754ff1d)
-    (property "Reference" "#GND?" (at 142.24 120.65 0)
+    (property "Reference" "#GND0120" (at 142.24 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 142.24 121.92 0)
@@ -520,7 +520,7 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/bb941b2b-0b73-4110-b4b0-cdc102f480d3"
-          (reference "#GND?") (unit 1)
+          (reference "#GND0120") (unit 1)
         )
       )
     )
@@ -529,14 +529,14 @@
   (symbol (lib_id "serial:CH340G") (at 167.64 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 064072fe-dffa-4355-bc11-951ee1846be9)
-    (property "Reference" "IC6" (at 167.64 81.28 0)
+    (property "Reference" "IC?" (at 167.64 81.28 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "CH340G" (at 167.64 83.82 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "" (at 167.64 99.06 0)
-      (effects (font (size 1.524 1.524)))
+    (property "Footprint" "SOP:SOP-16" (at 167.64 99.06 0)
+      (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (at 167.64 99.06 0)
       (effects (font (size 1.524 1.524)))
@@ -560,7 +560,7 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/bb941b2b-0b73-4110-b4b0-cdc102f480d3"
-          (reference "IC6") (unit 1)
+          (reference "IC?") (unit 1)
         )
       )
     )
@@ -569,7 +569,7 @@
   (symbol (lib_id "generic:GND") (at 129.54 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0cd8acf9-6837-437a-9b69-a924be5a078d)
-    (property "Reference" "#GND?" (at 133.35 120.65 0)
+    (property "Reference" "#GND0121" (at 133.35 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 133.35 121.92 0)
@@ -585,7 +585,7 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/bb941b2b-0b73-4110-b4b0-cdc102f480d3"
-          (reference "#GND?") (unit 1)
+          (reference "#GND0121") (unit 1)
         )
       )
     )
@@ -620,7 +620,7 @@
   (symbol (lib_id "generic:GND") (at 115.57 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 43801c3e-b002-403b-84fd-01bdfb79271b)
-    (property "Reference" "#GND?" (at 119.38 90.17 0)
+    (property "Reference" "#GND0124" (at 119.38 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 119.38 91.44 0)
@@ -636,7 +636,7 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/bb941b2b-0b73-4110-b4b0-cdc102f480d3"
-          (reference "#GND?") (unit 1)
+          (reference "#GND0124") (unit 1)
         )
       )
     )
@@ -645,7 +645,7 @@
   (symbol (lib_id "generic:GND") (at 154.94 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5662069c-5ef1-4363-a0e6-9c3b035e362f)
-    (property "Reference" "#GND?" (at 158.75 120.65 0)
+    (property "Reference" "#GND0119" (at 158.75 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 158.75 121.92 0)
@@ -661,7 +661,7 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/bb941b2b-0b73-4110-b4b0-cdc102f480d3"
-          (reference "#GND?") (unit 1)
+          (reference "#GND0119") (unit 1)
         )
       )
     )
@@ -698,7 +698,7 @@
   (symbol (lib_id "generic:GND") (at 132.08 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 604f9a9c-ad02-41b3-818b-d28d38c67c2e)
-    (property "Reference" "#GND?" (at 135.89 91.44 0)
+    (property "Reference" "#GND0123" (at 135.89 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 135.89 92.71 0)
@@ -714,7 +714,7 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/bb941b2b-0b73-4110-b4b0-cdc102f480d3"
-          (reference "#GND?") (unit 1)
+          (reference "#GND0123") (unit 1)
         )
       )
     )
@@ -723,7 +723,7 @@
   (symbol (lib_id "generic:GND") (at 142.24 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a2cccdf2-7fc0-4c29-8c5c-d467370bfcad)
-    (property "Reference" "#GND?" (at 146.05 91.44 0)
+    (property "Reference" "#GND0122" (at 146.05 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 146.05 92.71 0)
@@ -739,7 +739,7 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/bb941b2b-0b73-4110-b4b0-cdc102f480d3"
-          (reference "#GND?") (unit 1)
+          (reference "#GND0122") (unit 1)
         )
       )
     )
@@ -856,7 +856,7 @@
   (symbol (lib_id "generic:GND") (at 147.32 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f00bca3d-6c2c-4302-a54d-f4eaf56a98ca)
-    (property "Reference" "#GND?" (at 151.13 120.65 0)
+    (property "Reference" "#GND0118" (at 151.13 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 151.13 121.92 0)
@@ -872,7 +872,7 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/bb941b2b-0b73-4110-b4b0-cdc102f480d3"
-          (reference "#GND?") (unit 1)
+          (reference "#GND0118") (unit 1)
         )
       )
     )
@@ -881,7 +881,7 @@
   (symbol (lib_id "generic:3V3") (at 142.24 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid feb25329-909b-4fe9-a084-d8ef69c2285b)
-    (property "Reference" "#3V?" (at 146.05 82.55 0)
+    (property "Reference" "#3V0101" (at 146.05 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3V3" (at 142.24 80.01 0)
@@ -897,7 +897,7 @@
     (instances
       (project "hikari"
         (path "/020af8ab-593e-45b9-b2cd-8db025796961/bb941b2b-0b73-4110-b4b0-cdc102f480d3"
-          (reference "#3V?") (unit 1)
+          (reference "#3V0101") (unit 1)
         )
       )
     )
