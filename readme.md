@@ -11,12 +11,13 @@
 
 # TODO
 
+* figure out how to wire [USB-C](https://www.allaboutcircuits.com/technical-articles/introduction-to-usb-type-c-which-pins-power-delivery-data-transfer/)
 * battery connector needs to be 2 through holes for AWG24 with the soldermask intact on the bottom side
 * change the second button to a power switch?
 * mounting holes
 * gather datasheets to a common location
+* pins for ws8212b
 * missing footprints/wrong components
-    * CN1 should be type-c
     * X1 wrong component / no footprint
     * IC7 no footprint
     * D2 no MPN
