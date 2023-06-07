@@ -436,6 +436,9 @@
     (property "Datasheet" "" (at 91.44 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Digi-Key" "13-RC0603JR-1010KLCT-ND" (at 91.44 71.12 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 9840f9f6-b514-4d0a-9f36-642613ac859c))
     (pin "2" (uuid e21dac46-3b61-4093-873f-be1c643dea44))
     (instances
@@ -578,7 +581,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid a58153f9-573d-4ad1-8026-1463bda1f149))
-    (pin "2" (uuid 9086ce78-adbf-420c-973c-6b3aa19da37c))
+    (pin "2" (uuid b370d430-533a-4b2e-b915-ea32ed2a9c73))
     (pin "2" (uuid b370d430-533a-4b2e-b915-ea32ed2a9c73))
     (pin "3" (uuid 9c7c8502-a3db-40bd-9bb4-78607a3bade6))
     (pin "4" (uuid 236e53d9-f491-45ea-aaca-1274c0d057aa))
