@@ -8,6 +8,7 @@
 # fixme
 
 * ~LED footprint is confusing as the silkscreen EP marking is pointing to pin 1, not the cathode (pin 8)~
+* battery pack cable seems to be very close to the power switch
 
 # TODO
 
@@ -26,3 +27,8 @@
     * ~T1 wrong component?~
     * ~BAT1 no footprint~
     * ~SW1 no MPN/footprint~
+* add bottom side graphics
+* update pdf links (ex: esp12)
+* gpio 15 pull down
+* battery has no BOM or datasheet
+* 6mm holes to 6.5mm for clearance

@@ -462,6 +462,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 00b329e5-2c66-4909-9df8-66dbc29298eb)
   )
+  (text "GPIO 15PULLDOWN!!!" (at 111.76 137.16 0)
+    (effects (font (size 3 3) (thickness 0.6) bold (color 255 0 34 1)) (justify left bottom))
+    (uuid 4c4b1e7e-87ae-4646-9844-65d2a9743314)
+  )
 
   (label "temperature" (at 166.37 86.36 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
