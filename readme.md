@@ -7,28 +7,10 @@
 
 # fixme
 
-* ~LED footprint is confusing as the silkscreen EP marking is pointing to pin 1, not the cathode (pin 8)~
 * battery pack cable seems to be very close to the power switch
 
 # TODO
 
-* ~figure out how to wire [USB-C](https://www.allaboutcircuits.com/technical-articles/introduction-to-usb-type-c-which-pins-power-delivery-data-transfer/)~
-* ~battery connector needs to be 2 through holes for AWG24 with the soldermask intact on the bottom side~
-* ~redo rgbw signal pinout~
-    * ~is RED OK as GPIO16 instead of 15?~ yes
-* ~change the second button to a power switch?~
-* mounting holes
 * gather datasheets to a common location
-* ~pins for ws8212b~
-* missing footprints/wrong components
-    * ~X1 wrong component / no footprint~
-    * ~IC7 no footprint~
-    * ~D2 no MPN~
-    * ~T1 wrong component?~
-    * ~BAT1 no footprint~
-    * ~SW1 no MPN/footprint~
-* add bottom side graphics
 * update pdf links (ex: esp12)
-* gpio 15 pull down
 * battery has no BOM or datasheet
-* 6mm holes to 6.5mm for clearance
