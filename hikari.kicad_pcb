@@ -53,7 +53,7 @@
     )
     (pad_to_mask_clearance 0.1)
     (allow_soldermask_bridges_in_footprints yes)
-    (grid_origin 152.4 101.6)
+    (grid_origin 152.398157 101.605455)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
       (plot_on_all_layers_selection 0x0000000_00000000)
@@ -24909,7 +24909,7 @@
   (gr_text "⌀ 3.5 mm" (at 181.4 84.6) (layer "Dwgs.User") (tstamp 85869f4c-14a2-4b34-a86d-d67e102021d6)
     (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left bottom))
   )
-  (gr_text "⌀ 6 mm" (at 187.4 98.6) (layer "Dwgs.User") (tstamp 87c39ef3-56b9-4543-81d9-da165c0b3e5d)
+  (gr_text "⌀ 6.5 mm" (at 187.4 98.6) (layer "Dwgs.User") (tstamp 87c39ef3-56b9-4543-81d9-da165c0b3e5d)
     (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left bottom))
   )
   (dimension (type aligned) (layer "Dwgs.User") (tstamp 25b35bbd-bc64-4495-b7db-4e493eb37391)

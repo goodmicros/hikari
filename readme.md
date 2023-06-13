@@ -1,3 +1,5 @@
+![badge](output/hikari.jpg)
+
 # requirements
 
 * WLED compatible
