@@ -1,5 +1,7 @@
 ![badge](output/hikari.jpg)
 
+Case model: https://cad.onshape.com/documents/9da918a63413a7b839d4e473/w/a43791fa43f813add74c9832/e/dfbc73c4b037cd1ff73a47b7
+
 # requirements
 
 * WLED compatible
