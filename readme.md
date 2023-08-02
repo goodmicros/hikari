@@ -43,6 +43,3 @@ pin configuration on WLED:
 
 ## Bugs
 * CH340G VCC should be connected to 3.3V
-
-## Availability
-* [goodmicros.com](https://goodmicros.com/index.php/shop/)  
