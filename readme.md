@@ -7,7 +7,11 @@ The goal is to provide inexpensive, portable lights for events and DIY use.
 ## Usage
 Connect 3x AAA batteries and switch on. The USB port can be used to bypass the battery pack for extended usage.
 
-If you want, you can further configure / adjust the light color and effects over WLAN via [LedFX](https://www.ledfx.app/) or [WLED compatibles](https://github.com/Aircoookie/WLED#-supported-light-control-interfaces).
+If you want, you can further configure / adjust the light color and effects over WLAN with:
+* WLED native phone app: [iOS App Store](https://apps.apple.com/us/app/wled-native/id6446207239) - [Google Play](https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid)
+* [LedFX](https://www.ledfx.app/) 
+* [WLED compatibles](https://github.com/Aircoookie/WLED#-supported-light-control-interfaces)
+* or by connecting to the device's IP address
 
 ### Modes  
 * The switch turns the whole module on/off
@@ -18,13 +22,12 @@ If you want, you can further configure / adjust the light color and effects over
 * Hold the button for 6 seconds to reset WLAN config
 * Hold the button for more than 12 seconds to factory reset WLED settings
 
-## Wireless control / Wireless fallback
+## Wireless control / WLAN fallback
 By default the device is looking for a Good Micros WLAN and tries to connect to it. 
 If it can't find the WLAN it will create an access point which you can connect with your phone or laptop to change the effects and settings.  
 The AP name is hikari- + the number of your device which is also printed on a sticker in the battery case. The default password for the AP is wled1234.
 
 ## Design requirements
-
 * WLED compatible
 * Battery powered with the possibility to bypass with USB power
 * Brightness comparable to a strip of ws2812b leds
