@@ -60,4 +60,4 @@ pin configuration on WLED:
 [Case model](https://cad.onshape.com/documents/9da918a63413a7b839d4e473/w/a43791fa43f813add74c9832/e/dfbc73c4b037cd1ff73a47b7)
 
 ## Bugs
-* CH340G VCC should be connected to 3.3V
+* ~CH340G VCC should be connected to 3.3V~

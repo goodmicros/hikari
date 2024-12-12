@@ -1,812 +1,2108 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 020af8ab-593e-45b9-b2cd-8db025796961)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "generic:5V" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "#5V" (at 3.81 1.27 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "5V" (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "5V_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 1.27)
-            (xy -1.27 1.27)
-            (xy 0 2.54)
-            (xy 1.27 1.27)
-            (xy 0 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "5V_1_1"
-        (pin power_in line (at 0 0 90) (length 2.54) hide
-          (name "5V" (effects (font (size 1.27 1.27))))
-          (number "~" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "generic:GND" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "#GND" (at 3.81 1.27 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 3.81 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy -1.27 -1.27)
-            (xy 1.27 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -2.54)
-            (xy 0 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -1.27)
-            (xy 0 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.635 -1.905)
-            (xy -0.635 -1.905)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 2.54) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "~" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "generic:R" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 0 1.905 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "R" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "SMT:0603" (at -2.54 -0.635 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_0_1"
-        (rectangle (start -1.27 0.635) (end 1.27 -0.635)
-          (stroke (width 0) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "R_1_1"
-        (pin bidirectional line (at -2.54 0 0) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 2.54 0 180) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "pin_headers:1x3" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "CN" (at 2.54 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "1x3" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "1x3_0_1"
-        (rectangle (start 2.54 3.81) (end 5.08 -3.81)
-          (stroke (width 0) (type solid))
-          (fill (type outline))
-        )
-      )
-      (symbol "1x3_1_1"
-        (pin bidirectional line (at 0 2.54 0) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 0 0 0) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 0 -2.54 0) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "switches:JS102011SAQN" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "JS102011SAQN" (at 0 6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "buttons:JS102011SAQN" (at 0 -1.27 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "https://www.ckswitches.com/media/1422/js.pdf" (at 0 -1.27 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Digi-Key" "401-1999-1-ND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "slide switch right angle" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "slide switch right angle" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "JS102011SAQN_0_1"
-        (polyline
-          (pts
-            (xy -1.27 0)
-            (xy 1.27 2.54)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-      )
-      (symbol "JS102011SAQN_1_1"
-        (pin bidirectional line (at 2.54 2.54 180) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -2.54 0 0) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -2.54 0 0) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 2.54 0 180) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 2.54 0 180) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "switches:LS12W3-T" (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "LS12W3-T" (at 0 6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "buttons:LS12W3-T" (at 0 -1.27 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "https://ce.citizen.co.jp/productse/tactile_category/tactile_side/detail/LS12" (at -1.27 7.62 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Digi-Key" "1642-LS12W3-TCT-ND" (at 0 6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "push button side" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "LS12W3-T_0_1"
-        (polyline
-          (pts
-            (xy -1.27 0)
-            (xy 1.27 1.27)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-      )
-      (symbol "LS12W3-T_1_1"
-        (pin bidirectional line (at -2.54 0 0) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 2.54 0 180) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 91.44 66.04) (diameter 0) (color 0 0 0 0)
-    (uuid 17669607-efdb-4f1e-b959-7ccbeb132b32)
-  )
-
-  (wire (pts (xy 91.44 73.66) (xy 91.44 76.2))
-    (stroke (width 0) (type default))
-    (uuid 189a3832-b693-465b-9e06-717c96b5ee48)
-  )
-  (wire (pts (xy 83.82 63.5) (xy 81.28 63.5))
-    (stroke (width 0) (type default))
-    (uuid 21176c56-793c-4254-abce-4580e895f587)
-  )
-  (wire (pts (xy 116.84 137.16) (xy 116.84 134.62))
-    (stroke (width 0) (type default))
-    (uuid 387bf76c-151f-468a-a175-336f3e12116f)
-  )
-  (wire (pts (xy 91.44 66.04) (xy 91.44 68.58))
-    (stroke (width 0) (type default))
-    (uuid 5ae4e7fd-cf2e-4d1c-96bb-50733e295f63)
-  )
-  (wire (pts (xy 116.84 129.54) (xy 116.84 127))
-    (stroke (width 0) (type default))
-    (uuid 5cda307f-14ee-4773-87ec-7f67ed6abe25)
-  )
-  (wire (pts (xy 88.9 99.06) (xy 127 99.06))
-    (stroke (width 0) (type default))
-    (uuid 624d8e82-907e-47da-8e51-b7c85c59d95a)
-  )
-  (wire (pts (xy 165.1 54.61) (xy 177.8 54.61))
-    (stroke (width 0) (type default))
-    (uuid 7e0bd4bc-74ff-4128-bdbf-1a679af3f69e)
-  )
-  (wire (pts (xy 165.1 105.41) (xy 177.8 105.41))
-    (stroke (width 0) (type default))
-    (uuid 80cb8c51-27c2-4fe9-af95-58e63b3b2417)
-  )
-  (wire (pts (xy 116.84 114.3) (xy 116.84 116.84))
-    (stroke (width 0) (type default))
-    (uuid 814b702f-2b00-4324-951a-7a3deed171e6)
-  )
-  (wire (pts (xy 124.46 114.3) (xy 127 114.3))
-    (stroke (width 0) (type default))
-    (uuid 8369b30b-f670-40eb-8140-227f486d6669)
-  )
-  (wire (pts (xy 114.3 132.08) (xy 127 132.08))
-    (stroke (width 0) (type default))
-    (uuid 840dc187-7ff3-4793-b67b-2c67b22d10e0)
-  )
-  (wire (pts (xy 114.3 129.54) (xy 116.84 129.54))
-    (stroke (width 0) (type default))
-    (uuid 85ae49a4-d6b2-4124-84ed-aee09c694d4f)
-  )
-  (wire (pts (xy 116.84 114.3) (xy 119.38 114.3))
-    (stroke (width 0) (type default))
-    (uuid 880d8d21-1f8a-49a2-8711-655230531f37)
-  )
-  (wire (pts (xy 116.84 134.62) (xy 114.3 134.62))
-    (stroke (width 0) (type default))
-    (uuid a095a8d6-e09b-4620-b4c2-beb3065a41b0)
-  )
-  (wire (pts (xy 81.28 63.5) (xy 81.28 60.96))
-    (stroke (width 0) (type default))
-    (uuid a555687a-1dac-44a3-940f-c9346872272c)
-  )
-  (wire (pts (xy 96.52 91.44) (xy 96.52 73.66))
-    (stroke (width 0) (type default))
-    (uuid a9184bcd-f8d9-453c-a583-fb9af676d350)
-  )
-  (wire (pts (xy 96.52 91.44) (xy 88.9 91.44))
-    (stroke (width 0) (type default))
-    (uuid bd148f77-5d42-487a-a845-d213e692966b)
-  )
-  (wire (pts (xy 88.9 66.04) (xy 91.44 66.04))
-    (stroke (width 0) (type default))
-    (uuid c07d5abe-580d-4b55-bba0-e1620321f6de)
-  )
-  (wire (pts (xy 165.1 80.01) (xy 177.8 80.01))
-    (stroke (width 0) (type default))
-    (uuid c2aa4f1f-c644-40fe-a204-afad4b4c5762)
-  )
-  (wire (pts (xy 101.6 73.66) (xy 96.52 73.66))
-    (stroke (width 0) (type default))
-    (uuid d504f192-d789-4635-97cd-df4d0975ddd5)
-  )
-  (wire (pts (xy 88.9 96.52) (xy 127 96.52))
-    (stroke (width 0) (type default))
-    (uuid d5c7b1ca-c036-4bbe-b35d-38e81759e90a)
-  )
-  (wire (pts (xy 91.44 66.04) (xy 101.6 66.04))
-    (stroke (width 0) (type default))
-    (uuid e9169cb7-ee0a-429f-aea6-26a995d0671a)
-  )
-  (wire (pts (xy 165.1 130.81) (xy 177.8 130.81))
-    (stroke (width 0) (type default))
-    (uuid f9e97a64-36be-4bdf-a101-2cec727bec01)
-  )
-
-  (label "GREEN" (at 168.91 80.01 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 1cfc3916-c5dc-4eb7-a310-92a3c20d3dd7)
-  )
-  (label "WHITE" (at 168.91 130.81 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 53015538-df0c-4eda-8908-99ca25b34c6f)
-  )
-  (label "BLUE" (at 168.91 105.41 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 89bd4dd6-042a-4d36-a365-f9597d5d72ff)
-  )
-  (label "RED" (at 168.91 54.61 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid b2060207-b62e-4d29-9384-d11da8e64b0c)
-  )
-
-  (symbol (lib_id "generic:GND") (at 116.84 137.16 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1bc28f4a-37b3-402f-91ed-8dfd76d2766b)
-    (property "Reference" "#GND09" (at 120.65 135.89 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 120.65 137.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (at 116.84 137.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 116.84 137.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "~" (uuid 9135c8ea-7bc6-401a-955d-b52879d205f8))
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961"
-          (reference "#GND09") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "generic:5V") (at 116.84 127 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 242f3145-34a8-4037-8c86-074981efe001)
-    (property "Reference" "#5V0101" (at 120.65 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "5V" (at 116.84 121.92 0)
-      (effects (font (size 1.27 1.27)) (justify top))
-    )
-    (property "Footprint" "" (at 116.84 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 116.84 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "~" (uuid 9713eabd-85f4-4e20-b6fa-5b33aed925ac))
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961/88d27d54-d6a4-4c1b-84b3-09a59cbef514"
-          (reference "#5V0101") (unit 1)
-        )
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961"
-          (reference "#5V05") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "generic:R") (at 91.44 71.12 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 497b21ba-1003-4642-bb01-ae0b24b6c555)
-    (property "Reference" "R16" (at 92.71 71.12 90)
-      (effects (font (size 1.27 1.27)) (justify right top))
-    )
-    (property "Value" "10k" (at 92.71 71.12 90)
-      (effects (font (size 1.27 1.27)) (justify right bottom))
-    )
-    (property "Footprint" "SMT:0603" (at 92.075 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 91.44 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digi-Key" "13-RC0603JR-1010KLCT-ND" (at 91.44 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9840f9f6-b514-4d0a-9f36-642613ac859c))
-    (pin "2" (uuid e21dac46-3b61-4093-873f-be1c643dea44))
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961"
-          (reference "R16") (unit 1)
-        )
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961/88d27d54-d6a4-4c1b-84b3-09a59cbef514"
-          (reference "R5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "generic:5V") (at 81.28 60.96 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 4e48671d-23bc-4d3f-ba1d-fd6d43996a65)
-    (property "Reference" "#5V0101" (at 85.09 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "5V" (at 81.28 55.88 0)
-      (effects (font (size 1.27 1.27)) (justify top))
-    )
-    (property "Footprint" "" (at 81.28 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 81.28 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "~" (uuid a9c311c0-9dae-413f-828e-17d4d70dbbaa))
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961/88d27d54-d6a4-4c1b-84b3-09a59cbef514"
-          (reference "#5V0101") (unit 1)
-        )
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961"
-          (reference "#5V04") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "switches:LS12W3-T") (at 121.92 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 851690a3-b905-4150-88ed-9796277349e6)
-    (property "Reference" "SW1" (at 121.92 111.76 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LS12W3-T" (at 121.92 107.95 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "buttons:LS12W3-T" (at 121.92 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://ce.citizen.co.jp/productse/tactile_category/tactile_side/detail/LS12" (at 120.65 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digi-Key" "1642-LS12W3-TCT-ND" (at 121.92 107.95 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d738ca91-4ae6-4d3b-9079-a8e5d68cb8c1))
-    (pin "2" (uuid ee2ee088-c549-4c81-9a6f-dac6f9d3385f))
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961"
-          (reference "SW1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "pin_headers:1x3") (at 114.3 132.08 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8651c68a-1aa5-4497-a02a-6644dea31f99)
-    (property "Reference" "CN2" (at 110.49 127 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1x3" (at 114.3 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (at 114.3 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 114.3 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3af07473-756f-4e12-b7b9-c4ff25a72c21))
-    (pin "2" (uuid 616edaf2-7e59-4e5c-8f2b-ba12d072d175))
-    (pin "3" (uuid 4fd9ae55-9e24-40eb-86ef-0680e499c97e))
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961"
-          (reference "CN2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "generic:GND") (at 116.84 116.84 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 978f3988-91c4-424a-998c-f493b3f53de1)
-    (property "Reference" "#GND0101" (at 120.65 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 120.65 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (at 116.84 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 116.84 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "~" (uuid 2d61313c-2508-4658-a27d-78dde089996a))
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961"
-          (reference "#GND0101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "switches:JS102011SAQN") (at 86.36 66.04 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid b402c5d0-52f1-4b2f-b234-9b77246c3ae2)
-    (property "Reference" "SW2" (at 86.36 62.23 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "JS102011SAQN" (at 86.36 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "buttons:JS102011SAQN" (at 86.36 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.ckswitches.com/media/1422/js.pdf" (at 86.36 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digi-Key" "401-1999-1-ND" (at 86.36 69.85 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a58153f9-573d-4ad1-8026-1463bda1f149))
-    (pin "2" (uuid b370d430-533a-4b2e-b915-ea32ed2a9c76))
-    (pin "2" (uuid b370d430-533a-4b2e-b915-ea32ed2a9c76))
-    (pin "3" (uuid 9c7c8502-a3db-40bd-9bb4-78607a3bade6))
-    (pin "4" (uuid 236e53d9-f491-45ea-aaca-1274c0d057aa))
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961"
-          (reference "SW2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "generic:GND") (at 91.44 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ba4bba71-f0ea-45d9-8be1-d1b313312e86)
-    (property "Reference" "#GND08" (at 95.25 74.93 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 95.25 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (at 91.44 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 91.44 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "~" (uuid 7f8b9981-6a5f-445e-864e-3dc8848e1e8a))
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961"
-          (reference "#GND08") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet (at 177.8 101.6) (size 12.7 12.7) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 1271e14e-21a7-43a9-b754-008b9cfd2c5b)
-    (property "Sheetname" "BLUE" (at 177.8 100.8884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "LED.kicad_sch" (at 177.8 114.8846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "EN" input (at 177.8 105.41 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 444b4a8b-be84-4046-bd37-8e87cf56c1c6)
-    )
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961" (page "4"))
-      )
-    )
-  )
-
-  (sheet (at 177.8 76.2) (size 12.7 12.7) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 4047ad27-abaf-44fc-8fae-330cc49c4e32)
-    (property "Sheetname" "GREEN" (at 177.8 75.4884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "LED.kicad_sch" (at 177.8 89.4846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "EN" input (at 177.8 80.01 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 36187cf1-42e7-4441-9296-b003183d0e40)
-    )
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961" (page "3"))
-      )
-    )
-  )
-
-  (sheet (at 177.8 127) (size 12.7 12.7) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 78613248-b522-4bfb-a044-b4a58ad1b605)
-    (property "Sheetname" "WHITE" (at 177.8 126.2884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "LED.kicad_sch" (at 177.8 140.2846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "EN" input (at 177.8 130.81 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 9df55ee7-17e9-4198-b645-fd033bfd059e)
-    )
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961" (page "5"))
-      )
-    )
-  )
-
-  (sheet (at 127 50.8) (size 38.1 88.9) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 7e1c209e-2b24-4f31-82b7-056b936970c8)
-    (property "Sheetname" "MCU" (at 127 50.0884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "MCU.kicad_sch" (at 127 140.2846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "WHITE" output (at 165.1 130.81 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid efa3992c-4228-4293-9b6b-d48325882489)
-    )
-    (pin "GREEN" output (at 165.1 80.01 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid ecceca48-d818-405a-9660-861760b8fd7c)
-    )
-    (pin "BLUE" output (at 165.1 105.41 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid efa7eda4-f8d3-4305-8995-624c5358e122)
-    )
-    (pin "TX" output (at 127 99.06 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 37e708e6-7aab-4228-8569-eea2047ebebb)
-    )
-    (pin "Button_1" input (at 127 114.3 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 8937748f-1f8c-4486-af8b-0cbe89b7555a)
-    )
-    (pin "RX" input (at 127 96.52 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 4228f847-0a75-4c8b-b6a9-ba1dccf47cc0)
-    )
-    (pin "RED" output (at 165.1 54.61 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 7ed9522e-3b1b-4cd6-a194-01bca74fb65c)
-    )
-    (pin "LED_strip" output (at 127 132.08 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 1671d547-4094-4b08-9188-a096ed438083)
-    )
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961" (page "7"))
-      )
-    )
-  )
-
-  (sheet (at 101.6 63.5) (size 12.7 12.7) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 88d27d54-d6a4-4c1b-84b3-09a59cbef514)
-    (property "Sheetname" "Power supply" (at 101.6 62.7884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "PSU.kicad_sch" (at 101.6 76.7846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "V_USB" input (at 101.6 73.66 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid df5a6e84-50f2-459a-883c-461432ba872d)
-    )
-    (pin "Enable" input (at 101.6 66.04 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 11edec17-87bc-4e05-8b64-505a5c8f4b73)
-    )
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961" (page "8"))
-      )
-    )
-  )
-
-  (sheet (at 177.8 50.8) (size 12.7 12.7) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid aa80c023-a405-4836-a45d-48fe501d72e6)
-    (property "Sheetname" "RED" (at 177.8 50.0884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "LED.kicad_sch" (at 177.8 64.0846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "EN" input (at 177.8 54.61 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid f9d4407f-905e-4929-83b8-799d4ef93c17)
-    )
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961" (page "2"))
-      )
-    )
-  )
-
-  (sheet (at 76.2 88.9) (size 12.7 12.7) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid bb941b2b-0b73-4110-b4b0-cdc102f480d3)
-    (property "Sheetname" "USB" (at 76.2 88.1884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "USB.kicad_sch" (at 76.2 102.1846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "RX" output (at 88.9 96.52 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 47659e75-95d9-4f65-bb92-32f94088a92e)
-    )
-    (pin "TX" input (at 88.9 99.06 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid e5ab3625-5329-46a0-9f17-375902fec42e)
-    )
-    (pin "V_USB" output (at 88.9 91.44 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 74cf5dad-1812-4166-9d8c-cba1949596bb)
-    )
-    (instances
-      (project "hikari"
-        (path "/020af8ab-593e-45b9-b2cd-8db025796961" (page "6"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "020af8ab-593e-45b9-b2cd-8db025796961")
+	(paper "A4")
+	(lib_symbols
+		(symbol "generic:5V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#5V"
+				(at 3.81 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "5V"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "5V_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.27 1.27) (xy 0 2.54) (xy 1.27 1.27) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 2.54) hide
+					(name "5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "generic:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#GND"
+				(at 3.81 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 3.81 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -1.905) (xy -0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 2.54) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "generic:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "SMT:0603"
+				(at -2.54 -0.635 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.27 0.635)
+					(end 1.27 -0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin bidirectional line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "pin_headers:1x3"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "CN"
+				(at 2.54 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1x3"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1x3_0_1"
+				(rectangle
+					(start 2.54 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "1x3_1_1"
+				(pin bidirectional line
+					(at 0 2.54 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -2.54 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "switches:JS102011SAQN"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "JS102011SAQN"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "buttons:JS102011SAQN"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ckswitches.com/media/1422/js.pdf"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "slide switch right angle"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Digi-Key" "401-1999-1-ND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "slide switch right angle"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "JS102011SAQN_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "JS102011SAQN_1_1"
+				(pin bidirectional line
+					(at 2.54 2.54 180)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "switches:LS12W3-T"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LS12W3-T"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "buttons:LS12W3-T"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ce.citizen.co.jp/productse/tactile_category/tactile_side/detail/LS12"
+				(at -1.27 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Digi-Key" "1642-LS12W3-TCT-ND"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "push button side"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LS12W3-T_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LS12W3-T_1_1"
+				(pin bidirectional line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 91.44 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17669607-efdb-4f1e-b959-7ccbeb132b32")
+	)
+	(wire
+		(pts
+			(xy 91.44 73.66) (xy 91.44 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "189a3832-b693-465b-9e06-717c96b5ee48")
+	)
+	(wire
+		(pts
+			(xy 83.82 63.5) (xy 81.28 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21176c56-793c-4254-abce-4580e895f587")
+	)
+	(wire
+		(pts
+			(xy 116.84 137.16) (xy 116.84 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "387bf76c-151f-468a-a175-336f3e12116f")
+	)
+	(wire
+		(pts
+			(xy 91.44 66.04) (xy 91.44 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ae4e7fd-cf2e-4d1c-96bb-50733e295f63")
+	)
+	(wire
+		(pts
+			(xy 116.84 129.54) (xy 116.84 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cda307f-14ee-4773-87ec-7f67ed6abe25")
+	)
+	(wire
+		(pts
+			(xy 88.9 99.06) (xy 127 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "624d8e82-907e-47da-8e51-b7c85c59d95a")
+	)
+	(wire
+		(pts
+			(xy 165.1 54.61) (xy 177.8 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e0bd4bc-74ff-4128-bdbf-1a679af3f69e")
+	)
+	(wire
+		(pts
+			(xy 165.1 105.41) (xy 177.8 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80cb8c51-27c2-4fe9-af95-58e63b3b2417")
+	)
+	(wire
+		(pts
+			(xy 116.84 114.3) (xy 116.84 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "814b702f-2b00-4324-951a-7a3deed171e6")
+	)
+	(wire
+		(pts
+			(xy 124.46 114.3) (xy 127 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8369b30b-f670-40eb-8140-227f486d6669")
+	)
+	(wire
+		(pts
+			(xy 114.3 132.08) (xy 127 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "840dc187-7ff3-4793-b67b-2c67b22d10e0")
+	)
+	(wire
+		(pts
+			(xy 114.3 129.54) (xy 116.84 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85ae49a4-d6b2-4124-84ed-aee09c694d4f")
+	)
+	(wire
+		(pts
+			(xy 116.84 114.3) (xy 119.38 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "880d8d21-1f8a-49a2-8711-655230531f37")
+	)
+	(wire
+		(pts
+			(xy 116.84 134.62) (xy 114.3 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a095a8d6-e09b-4620-b4c2-beb3065a41b0")
+	)
+	(wire
+		(pts
+			(xy 81.28 63.5) (xy 81.28 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a555687a-1dac-44a3-940f-c9346872272c")
+	)
+	(wire
+		(pts
+			(xy 96.52 91.44) (xy 96.52 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9184bcd-f8d9-453c-a583-fb9af676d350")
+	)
+	(wire
+		(pts
+			(xy 96.52 91.44) (xy 88.9 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd148f77-5d42-487a-a845-d213e692966b")
+	)
+	(wire
+		(pts
+			(xy 88.9 66.04) (xy 91.44 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c07d5abe-580d-4b55-bba0-e1620321f6de")
+	)
+	(wire
+		(pts
+			(xy 165.1 80.01) (xy 177.8 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2aa4f1f-c644-40fe-a204-afad4b4c5762")
+	)
+	(wire
+		(pts
+			(xy 101.6 73.66) (xy 96.52 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d504f192-d789-4635-97cd-df4d0975ddd5")
+	)
+	(wire
+		(pts
+			(xy 88.9 96.52) (xy 127 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5c7b1ca-c036-4bbe-b35d-38e81759e90a")
+	)
+	(wire
+		(pts
+			(xy 91.44 66.04) (xy 101.6 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9169cb7-ee0a-429f-aea6-26a995d0671a")
+	)
+	(wire
+		(pts
+			(xy 165.1 130.81) (xy 177.8 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9e97a64-36be-4bdf-a101-2cec727bec01")
+	)
+	(label "GREEN"
+		(at 168.91 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1cfc3916-c5dc-4eb7-a310-92a3c20d3dd7")
+	)
+	(label "WHITE"
+		(at 168.91 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "53015538-df0c-4eda-8908-99ca25b34c6f")
+	)
+	(label "BLUE"
+		(at 168.91 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "89bd4dd6-042a-4d36-a365-f9597d5d72ff")
+	)
+	(label "RED"
+		(at 168.91 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2060207-b62e-4d29-9384-d11da8e64b0c")
+	)
+	(symbol
+		(lib_id "generic:GND")
+		(at 116.84 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1bc28f4a-37b3-402f-91ed-8dfd76d2766b")
+		(property "Reference" "#GND09"
+			(at 120.65 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.65 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "9135c8ea-7bc6-401a-955d-b52879d205f8")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(reference "#GND09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "generic:5V")
+		(at 116.84 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "242f3145-34a8-4037-8c86-074981efe001")
+		(property "Reference" "#5V05"
+			(at 120.65 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "5V"
+			(at 116.84 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "9713eabd-85f4-4e20-b6fa-5b33aed925ac")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(reference "#5V05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "generic:R")
+		(at 91.44 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "497b21ba-1003-4642-bb01-ae0b24b6c555")
+		(property "Reference" "R16"
+			(at 92.71 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "10k"
+			(at 92.71 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Footprint" "SMT:0603"
+			(at 92.075 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key" "13-RC0603JR-1010KLCT-ND"
+			(at 91.44 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9840f9f6-b514-4d0a-9f36-642613ac859c")
+		)
+		(pin "2"
+			(uuid "e21dac46-3b61-4093-873f-be1c643dea44")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "generic:5V")
+		(at 81.28 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e48671d-23bc-4d3f-ba1d-fd6d43996a65")
+		(property "Reference" "#5V04"
+			(at 85.09 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "5V"
+			(at 81.28 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "a9c311c0-9dae-413f-828e-17d4d70dbbaa")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(reference "#5V04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "switches:LS12W3-T")
+		(at 121.92 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "851690a3-b905-4150-88ed-9796277349e6")
+		(property "Reference" "SW1"
+			(at 121.92 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LS12W3-T"
+			(at 121.92 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "buttons:LS12W3-T"
+			(at 121.92 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ce.citizen.co.jp/productse/tactile_category/tactile_side/detail/LS12"
+			(at 120.65 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key" "1642-LS12W3-TCT-ND"
+			(at 121.92 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d738ca91-4ae6-4d3b-9079-a8e5d68cb8c1")
+		)
+		(pin "2"
+			(uuid "ee2ee088-c549-4c81-9a6f-dac6f9d3385f")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pin_headers:1x3")
+		(at 114.3 132.08 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8651c68a-1aa5-4497-a02a-6644dea31f99")
+		(property "Reference" "CN2"
+			(at 110.49 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1x3"
+			(at 114.3 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3af07473-756f-4e12-b7b9-c4ff25a72c21")
+		)
+		(pin "2"
+			(uuid "616edaf2-7e59-4e5c-8f2b-ba12d072d175")
+		)
+		(pin "3"
+			(uuid "4fd9ae55-9e24-40eb-86ef-0680e499c97e")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(reference "CN2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "generic:GND")
+		(at 116.84 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "978f3988-91c4-424a-998c-f493b3f53de1")
+		(property "Reference" "#GND0101"
+			(at 120.65 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.65 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "2d61313c-2508-4658-a27d-78dde089996a")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(reference "#GND0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "switches:JS102011SAQN")
+		(at 86.36 66.04 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b402c5d0-52f1-4b2f-b234-9b77246c3ae2")
+		(property "Reference" "SW2"
+			(at 86.36 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "JS102011SAQN"
+			(at 86.36 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "buttons:JS102011SAQN"
+			(at 86.36 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/1422/js.pdf"
+			(at 86.36 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key" "401-1999-1-ND"
+			(at 86.36 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a58153f9-573d-4ad1-8026-1463bda1f149")
+		)
+		(pin "2"
+			(uuid "b370d430-533a-4b2e-b915-ea32ed2a9c76")
+		)
+		(pin "2"
+			(uuid "b370d430-533a-4b2e-b915-ea32ed2a9c77")
+		)
+		(pin "3"
+			(uuid "9c7c8502-a3db-40bd-9bb4-78607a3bade6")
+		)
+		(pin "4"
+			(uuid "236e53d9-f491-45ea-aaca-1274c0d057aa")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "generic:GND")
+		(at 91.44 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba4bba71-f0ea-45d9-8be1-d1b313312e86")
+		(property "Reference" "#GND08"
+			(at 95.25 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "~"
+			(uuid "7f8b9981-6a5f-445e-864e-3dc8848e1e8a")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(reference "#GND08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 101.6)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1271e14e-21a7-43a9-b754-008b9cfd2c5b")
+		(property "Sheetname" "BLUE"
+			(at 177.8 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LED.kicad_sch"
+			(at 177.8 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EN" input
+			(at 177.8 105.41 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "444b4a8b-be84-4046-bd37-8e87cf56c1c6")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 76.2)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4047ad27-abaf-44fc-8fae-330cc49c4e32")
+		(property "Sheetname" "GREEN"
+			(at 177.8 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LED.kicad_sch"
+			(at 177.8 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EN" input
+			(at 177.8 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "36187cf1-42e7-4441-9296-b003183d0e40")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 127)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "78613248-b522-4bfb-a044-b4a58ad1b605")
+		(property "Sheetname" "WHITE"
+			(at 177.8 126.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LED.kicad_sch"
+			(at 177.8 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EN" input
+			(at 177.8 130.81 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9df55ee7-17e9-4198-b645-fd033bfd059e")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 50.8)
+		(size 38.1 88.9)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7e1c209e-2b24-4f31-82b7-056b936970c8")
+		(property "Sheetname" "MCU"
+			(at 127 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 127 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "WHITE" output
+			(at 165.1 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "efa3992c-4228-4293-9b6b-d48325882489")
+		)
+		(pin "GREEN" output
+			(at 165.1 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ecceca48-d818-405a-9660-861760b8fd7c")
+		)
+		(pin "BLUE" output
+			(at 165.1 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "efa7eda4-f8d3-4305-8995-624c5358e122")
+		)
+		(pin "TX" output
+			(at 127 99.06 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "37e708e6-7aab-4228-8569-eea2047ebebb")
+		)
+		(pin "Button_1" input
+			(at 127 114.3 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8937748f-1f8c-4486-af8b-0cbe89b7555a")
+		)
+		(pin "RX" input
+			(at 127 96.52 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4228f847-0a75-4c8b-b6a9-ba1dccf47cc0")
+		)
+		(pin "RED" output
+			(at 165.1 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7ed9522e-3b1b-4cd6-a194-01bca74fb65c")
+		)
+		(pin "LED_strip" output
+			(at 127 132.08 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1671d547-4094-4b08-9188-a096ed438083")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 63.5)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "88d27d54-d6a4-4c1b-84b3-09a59cbef514")
+		(property "Sheetname" "Power supply"
+			(at 101.6 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PSU.kicad_sch"
+			(at 101.6 76.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "V_USB" input
+			(at 101.6 73.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "df5a6e84-50f2-459a-883c-461432ba872d")
+		)
+		(pin "Enable" input
+			(at 101.6 66.04 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "11edec17-87bc-4e05-8b64-505a5c8f4b73")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 50.8)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "aa80c023-a405-4836-a45d-48fe501d72e6")
+		(property "Sheetname" "RED"
+			(at 177.8 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LED.kicad_sch"
+			(at 177.8 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EN" input
+			(at 177.8 54.61 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f9d4407f-905e-4929-83b8-799d4ef93c17")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 76.2 88.9)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bb941b2b-0b73-4110-b4b0-cdc102f480d3")
+		(property "Sheetname" "USB"
+			(at 76.2 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB.kicad_sch"
+			(at 76.2 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RX" output
+			(at 88.9 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "47659e75-95d9-4f65-bb92-32f94088a92e")
+		)
+		(pin "TX" input
+			(at 88.9 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e5ab3625-5329-46a0-9f17-375902fec42e")
+		)
+		(pin "V_USB" output
+			(at 88.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "74cf5dad-1812-4166-9d8c-cba1949596bb")
+		)
+		(instances
+			(project "hikari"
+				(path "/020af8ab-593e-45b9-b2cd-8db025796961"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
